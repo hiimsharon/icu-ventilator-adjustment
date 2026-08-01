@@ -6,119 +6,137 @@
 
 <br>
 
-A research portfolio presenting a sequential approach to mechanical ventilator adjustment in intensive care.
+A research portfolio presenting a sequential approach to ICU mechanical
+ventilator adjustment through multivariate time-series modeling.
 
 <br>
 
-[Overview](#overview) · [Decision Process](#decision-process) · [Methodology](#methodology) · [Results](#experimental-results) · [Prototype](#application-prototype) · [Thesis](#master-thesis)
+[Research Highlights](#research-highlights) ·
+[Research Framework](#research-framework) ·
+[Phase Repositories](#phase-repositories) ·
+[Master Thesis](#master-thesis)
 
 </div>
 
 ---
 
-<!--
-Hero image will be inserted here after the final design is uploaded:
-
-<p align="center">
-  <img
-    src="assets/branding/hero-banner.png"
-    width="100%"
-    alt="ICU mechanical ventilator adjustment research overview"
-  >
-</p>
--->
-
-## Overview
-
-Mechanical ventilator adjustment in intensive care involves a sequence of interrelated decisions rather than a single isolated prediction.
-
-This research transforms the ventilator adjustment process into three connected decision tasks using multivariate ventilator-related time-series data:
-
-1. determining whether ventilator adjustment is required;
-2. identifying the direction of ventilator mode adjustment; and
-3. predicting the magnitude of ventilator parameter adjustment.
-
-The project emphasizes the decision process itself: sequential time-series information is progressively converted into clinically meaningful adjustment recommendations.
-
-<br>
+## Research Highlights
 
 <table>
   <tr>
     <td width="33%" valign="top">
+      <h3>Clinical Decision Process</h3>
+      A sequential decision process progressing from adjustment
+      requirement determination to mode adjustment direction and
+      parameter-level recommendation.
+    </td>
+    <td width="33%" valign="top">
       <h3>Multivariate Time-Series</h3>
-      Ventilator settings and patient-response variables are analyzed 
-      as temporally ordered information rather than isolated records.
+      Ventilator settings and patient-response variables are analyzed
+      as temporally ordered information rather than isolated
+      observations.
     </td>
     <td width="33%" valign="top">
-      <h3>Three-Phase Decision Process</h3>
-      The adjustment task progresses from adjustment requirement 
-      determination to mode direction and parameter-level prediction.
-    </td>
-    <td width="33%" valign="top">
-      <h3>Clinical Workflow Orientation</h3>
-      The research structure reflects the progressive reasoning involved 
-      in ICU ventilator adjustment decisions.
+      <h3>Three-Phase Framework</h3>
+      Three connected decision tasks are integrated into a complete
+      ICU mechanical ventilator adjustment workflow.
     </td>
   </tr>
 </table>
 
 ---
 
-## Decision Process
+## Research Framework
 
-<div align="center">
+This research transforms ICU mechanical ventilator adjustment into
+three sequential decision tasks:
 
-**Multivariate Ventilator Time-Series Data**
+1. determining whether ventilator adjustment is required;
+2. identifying the direction of ventilator mode adjustment; and
+3. predicting the magnitude of ventilator parameter adjustment.
 
-↓
+<p align="center">
+  <a href="assets/figures/framework/research-framework.jpg">
+    <img
+      src="assets/figures/framework/research-framework.jpg"
+      width="760"
+      alt="Overall research framework for ICU mechanical ventilator adjustment"
+    >
+  </a>
+</p>
 
-**Phase 1 — Adjustment Requirement Determination**
-
-↓
-
-**Phase 2-1 — Mode Adjustment Direction Classification**
-
-↓
-
-**Phase 2-2 — Parameter Adjustment Prediction**
-
-</div>
-
-<br>
-
-<!-- Detailed framework figure will be added here. -->
-
----
-
-## Methodology
-
-_Content and figures are being prepared for public presentation._
+<p align="center">
+  <sub>
+    Overall research workflow integrating data preparation,
+    time-series construction, model development, the three-phase
+    decision process, and model evaluation.
+  </sub>
+</p>
 
 ---
 
-## Experimental Results
+## Phase Repositories
 
-_Representative results from each decision phase will be added after copyright labeling and public-release review._
-
----
-
-## Application Prototype
-
-A limited research prototype will be included to demonstrate the application of the proposed decision process. The prototype is not the primary contribution of this project.
+<table>
+  <tr>
+    <td width="33%" valign="top">
+      <h3>Phase 1</h3>
+      <strong>Adjustment Requirement Determination</strong>
+      <br><br>
+      Time-series modeling to determine whether the current ventilator
+      setting should be maintained or adjusted.
+      <br><br>
+      <a href="https://github.com/hiimsharon/icu-ventilator-phase-1">
+        View Phase 1 Repository →
+      </a>
+    </td>
+    <td width="33%" valign="top">
+      <h3>Phase 2-1</h3>
+      <strong>Mode Adjustment Direction</strong>
+      <br><br>
+      Time-series classification of whether ventilator support should
+      be maintained, decreased, or increased.
+      <br><br>
+      <a href="https://github.com/hiimsharon/icu-ventilator-phase-2-1">
+        View Phase 2-1 Repository →
+      </a>
+    </td>
+    <td width="33%" valign="top">
+      <h3>Phase 2-2</h3>
+      <strong>Parameter Adjustment Prediction</strong>
+      <br><br>
+      Time-series prediction of adjustment magnitude for pressure
+      control and respiratory rate.
+      <br><br>
+      <a href="https://github.com/hiimsharon/icu-ventilator-phase-2-2">
+        View Phase 2-2 Repository →
+      </a>
+    </td>
+  </tr>
+</table>
 
 ---
 
 ## Master Thesis
 
-**Applying Deep Learning Methods to Mechanical Ventilator Adjustment in the Intensive Care Unit**
+**Applying Deep Learning Methods to Mechanical Ventilator Adjustment
+in the Intensive Care Unit**
 
-A link to the official thesis record will be added when it becomes available.
+Master's thesis, July 2026.
+
+The official National Digital Library of Theses and Dissertations in
+Taiwan record will be linked here after publication.
 
 ---
 
 ## Research and Use Notice
 
-Clinical source data are not distributed through this repository. The materials are provided for research communication, professional portfolio presentation, and academic demonstration only.
+Clinical source data are not distributed through this repository.
+
+This repository is intended for research communication, academic
+demonstration, and professional portfolio presentation. The materials
+must not be used to make clinical decisions or determine real-world
+ventilator settings.
 
 - [Research and Use Notice](NOTICE.md)
 - [Copyright Notice](COPYRIGHT.md)
@@ -131,7 +149,8 @@ Clinical source data are not distributed through this repository. The materials 
 
 Copyright © 2026 Sha Huang. All Rights Reserved.
 
-Original figures, visualizations, diagrams, interface designs, documentation, and presentation materials are protected by copyright.
+Original figures, visualizations, diagrams, documentation, interface
+designs, and presentation materials are protected by copyright.
 
 </sub>
 
