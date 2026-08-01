@@ -48,7 +48,7 @@ time-series analysis.
   </tr>
   <tr>
     <td><strong>Research Output</strong></td>
-    <td>Three sequential ventilator adjustment decisions</td>
+    <td>Three-stage ventilator adjustment decision framework</td>
   </tr>
 </table>
 
@@ -92,8 +92,7 @@ constructed according to the objective of each research phase.
 
 The completed framework converts sequential ventilator information
 into three linked decisions: adjustment requirement determination,
-mode adjustment direction classification, and parameter adjustment
-prediction.
+adjustment direction prediction, and parameter adjustment recommendation.
 
 <p align="center">
   <a href="assets/figures/framework/research-framework.jpg">
@@ -198,10 +197,10 @@ task.
     </td>
     <td width="33%" valign="top">
       <h3>Phase 2-1</h3>
-      <strong>Mode Adjustment Direction</strong>
+      <strong>Adjustment Direction Prediction</strong>
       <br><br>
-      Classifies whether ventilator support should be maintained,
-      decreased, or increased.
+      Predicts the direction of ventilator adjustment after the
+      requirement for adjustment has been determined.
       <br><br>
       <a href="https://github.com/hiimsharon/icu-ventilator-phase-2-1">
         View Phase 2-1 Repository →
@@ -209,10 +208,10 @@ task.
     </td>
     <td width="33%" valign="top">
       <h3>Phase 2-2</h3>
-      <strong>Parameter Adjustment Prediction</strong>
+      <strong>Parameter Adjustment Recommendation</strong>
       <br><br>
-      Predicts the adjustment magnitude of pressure control and
-      respiratory rate.
+      Recommends appropriate ventilator parameter adjustments
+      based on the identified adjustment direction.
       <br><br>
       <a href="https://github.com/hiimsharon/icu-ventilator-phase-2-2">
         View Phase 2-2 Repository →
@@ -227,7 +226,7 @@ task.
 
 **應用深度學習方法於加護病房呼吸器調參之研究**
 
-Applying Deep Learning Technique to Parameter Adjusting of Mechanical Ventilator ICU
+Applying Deep Learning Techniques for Mechanical Ventilator Parameter Adjustment in the ICU
 
 **Author:** 黃筱雯（2026）
 
