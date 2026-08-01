@@ -2,40 +2,46 @@
 
 Copyright © 2026 Sha Huang. All Rights Reserved.
 
-Unless otherwise indicated, the original materials presented in
-this repository were created by Sha Huang as part of the research
-project concerning ICU mechanical ventilator adjustment.
+Unless otherwise indicated, original materials presented in this
+repository were created by Sha Huang as part of the research project
+**ICU Mechanical Ventilator Adjustment**.
 
-Protected materials include, without limitation:
+Protected original materials include, without limitation:
 
-- original written descriptions and documentation;
+- written research descriptions and documentation;
 - research framework and workflow diagrams;
-- figures and visualizations;
-- graphical layouts and presentation materials;
-- research prototype and interface designs;
+- figures, visualizations, and graphical layouts;
+- interface and research prototype designs;
 - source code and configuration content;
 - model-related materials and outputs; and
-- the original organization and presentation of the research.
+- original presentation and organization of the research.
 
-No open-source license or general permission for reuse is granted.
+No open-source license or general reuse permission is granted.
 
-Academic, research, educational, institutional, or non-commercial
-status does not automatically grant permission to reproduce,
-modify, redraw, adapt, redistribute, implement, or incorporate
-protected materials into another work.
+Academic, educational, non-commercial, or research use does not by
+itself grant permission to reproduce, modify, adapt, redistribute,
+republish, translate, redraw, or incorporate protected materials into
+another work.
 
-Citation acknowledges the author and source but does not grant
-permission to reuse protected content.
+The research may be identified or discussed by properly acknowledging
+the author, research title, year, and original repository source.
+
+Acknowledgment or citation does not grant permission to copy, modify,
+redistribute, adapt, or incorporate protected content into another
+research project, paper, thesis, dissertation, academic project,
+presentation, system, product, dataset, model, or derivative work.
+
+Any reuse beyond a lawful and properly attributed limited citation
+requires prior written permission from the copyright holder.
 
 ## Third-Party Materials
 
-Materials identified as adapted from or attributed to third-party
+Materials adapted from, derived from, or attributed to third-party
 sources remain subject to the rights and terms of their respective
 copyright holders.
 
 ## Related Documents
 
-- [Citation Instructions](CITATION.md)
 - [Terms of Use](TERMS_OF_USE.md)
 - [Research and Use Notice](NOTICE.md)
 
@@ -43,3 +49,9 @@ copyright holders.
 
 Requests concerning reuse or permission should be submitted to the
 repository owner through GitHub.
+
+---
+
+**Copyright holder:** Sha Huang  
+**Year:** 2026  
+**Repository:** ICU Mechanical Ventilator Adjustment

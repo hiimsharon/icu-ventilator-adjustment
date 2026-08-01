@@ -2,101 +2,93 @@
 
 Copyright © 2026 Sha Huang. All Rights Reserved.
 
-## 1. Purpose
+## Repository Purpose
 
-This repository is made publicly viewable solely for professional
-portfolio presentation, research communication, academic reference,
-and discussion of the author's research.
+This repository is provided for research presentation, professional
+portfolio review, and academic reference.
 
-Public visibility does not constitute an open-source license or a
-grant of permission to reuse protected materials.
+Public availability does not grant an open-source license or general
+permission to reuse the repository contents.
 
-## 2. Permitted Citation
+## Citation and Acknowledgment
 
-The research may be cited for identification, scholarly discussion,
-review, or academic reference with clear attribution to the author
-and the associated master's thesis.
+This research may be identified, discussed, reviewed, or cited by
+clearly acknowledging:
 
-Citation acknowledges the source. Citation does not grant permission
-to reproduce, redraw, modify, adapt, redistribute, implement, or
-incorporate protected content into another work.
+- **Author:** Sha Huang
+- **Research title:** ICU Mechanical Ventilator Adjustment
+- **Year:** 2026
+- **Source:** https://github.com/hiimsharon/icu-ventilator-adjustment
 
-## 3. Prior Permission Required
+A citation or acknowledgment identifies the source of the research.
 
-Prior written permission from the copyright holder is required
-before protected materials may be:
+Citation does not grant permission to reproduce, republish,
+redistribute, modify, translate, redraw, adapt, or incorporate
+protected materials into another work.
 
-- reproduced, republished, or publicly transmitted;
-- translated, redrawn, modified, or adapted;
-- redistributed in original or modified form;
+## Permission Required
+
+Prior written permission from the copyright holder is required before
+protected materials may be:
+
+- reproduced or republished;
+- redistributed or publicly transmitted;
+- translated, modified, adapted, or redrawn;
 - included in another research project;
-- used in a thesis, dissertation, academic paper, course project,
-  technical report, poster, presentation, or teaching material;
-- used to reproduce a workflow, interface, software system, model,
-  or derivative implementation;
-- used for commercial, consulting, institutional, training, or
-  product-development purposes; or
+- included in a journal paper, thesis, dissertation, academic project,
+  report, presentation, teaching material, or publication;
+- incorporated into another software system, interface, workflow,
+  dataset, model, or derivative implementation;
 - used for machine-learning or generative-model training,
-  fine-tuning, evaluation, or dataset construction.
-
-## 4. Protected Materials
+  fine-tuning, evaluation, or dataset construction; or
+- used for commercial, institutional, consulting, or
+  product-development purposes.
 
 Protected materials include, without limitation:
 
 - original figures and visualizations;
 - research framework and workflow diagrams;
-- research prototype and interface designs;
+- interface and prototype designs;
 - written documentation and explanatory content;
 - source code and configuration files;
-- model architecture materials and model outputs;
-- presentation materials; and
-- the original selection, organization, and presentation of the
-  research content.
+- model outputs and trained models; and
+- original presentation and organization of the research.
 
-## 5. Academic and Research Use
+Academic, educational, research, or non-commercial status does not by
+itself grant permission.
 
-Academic, educational, non-commercial, institutional, or research
-status does not automatically grant permission to reuse protected
-materials.
+## Clinical Data
 
-Acknowledging or citing the author does not by itself authorize
-copying, adaptation, redistribution, implementation, or inclusion
-of protected materials in another research output.
+Clinical source data, patient-level records, identifiable information,
+restricted institutional materials, and confidential research data are
+not distributed through this repository.
 
-## 6. Clinical Data
+No permission is granted to access, reconstruct, infer, redistribute,
+or attempt to identify restricted clinical information associated with
+this research.
 
-Clinical source data are not distributed through this repository.
-
-No permission is granted to access, reconstruct, infer, distribute,
-or attempt to identify patient-level, institutional, or restricted
-clinical information associated with this research.
-
-## 7. Forking and Cloning
+## Forking and Cloning
 
 Forking, cloning, downloading, or viewing this repository does not
-grant permission to reuse, modify, redistribute, publish, or
+grant permission to reuse, redistribute, modify, publish, or
 incorporate protected materials into another work.
 
-## 8. Third-Party Materials
+## Lawful Limited Citation
 
-Third-party materials remain subject to the rights and terms of
-their respective copyright holders. Applicable citations and
-attributions should be retained.
+Nothing in these terms is intended to restrict a use that is
+independently permitted by applicable law.
 
-## 9. Applicable Legal Rights
+Any lawful limited citation must clearly identify the author and
+original source and remain within the legally permitted scope.
 
-Nothing in these terms is intended to restrict a use independently
-permitted by applicable law within its legally permitted scope.
+## Permission Requests
 
-## 10. Permission Requests
-
-A permission request should identify:
+Permission requests should identify:
 
 - the specific material requested;
-- the intended use;
-- the publication, research project, or product involved;
+- the intended purpose;
+- the planned publication or project;
 - the extent of reproduction or adaptation; and
-- whether the use is academic, institutional, or commercial.
+- whether the proposed use is academic, institutional, or commercial.
 
-Requests should be submitted to the repository owner through
-GitHub.
+Requests should be submitted to the repository owner through GitHub.
