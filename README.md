@@ -151,31 +151,11 @@ The complete workflow includes:
 
 **黃筱雯（2026）。《應用深度學習方法於加護病房呼吸器調參之研究》。**
 
-*Applying deep learning technique to parameter adjusting of mechanical ventilator ICU*
-
 Master's thesis, Kaohsiung Medical University, July 2026.
 
-The official National Digital Library of Theses and Dissertations in Taiwan record will be linked here after publication.
+The official record and citation will be added after publication in the
+National Digital Library of Theses and Dissertations in Taiwan.
 
----
-
-## Citation
-
-When discussing or referencing the research presented in this
-repository, please cite the associated master's thesis:
-
-> 黃筱雯（2026）。《應用深度學習方法於加護病房呼吸器調參之研究》
-> （碩士論文）。高雄醫學大學。
-
-The complete citation instructions are provided in
-[CITATION.md](CITATION.md).
-
-Citation identifies and acknowledges the source of the research.
-It does not grant permission to reproduce, redraw, modify,
-redistribute, implement, or incorporate protected materials into
-another research project or publication.
-
----
 
 ## Research Portfolio Notice
 
