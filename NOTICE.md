@@ -2,85 +2,67 @@
 
 ## Project Status
 
-This repository presents research outputs and portfolio materials from
+This repository presents research and portfolio materials from a
+master's research project concerning ICU mechanical ventilator
+adjustment based on multivariate time-series analysis.
 
-a master's research project concerning ICU mechanical ventilator
+The research includes:
 
-adjustment using multivariate time-series analysis and a three-phase
-
-clinical decision process.
-
-The repository is intended for:
-
-- research communication;
-
-- academic and professional portfolio presentation;
-
-- methodological documentation;
-
-- result visualization; and
-
-- demonstration of a research application concept.
+- multivariate time-series construction;
+- recurrent neural network modeling using LSTM and GRU;
+- Bayesian hyperparameter optimization;
+- repeated data splitting and model evaluation;
+- adjustment requirement determination;
+- mode adjustment direction classification; and
+- parameter adjustment prediction.
 
 ## Research Prototype
 
-Any interface shown in this repository is a research prototype created
-
-to demonstrate how the proposed decision process may be presented in
-
-an application environment.
+Any interface shown in this repository is a research prototype developed
+to demonstrate how the proposed decision process may be presented.
 
 It is not a deployed clinical system, certified medical device, or
-
-validated clinical decision support product.
+clinically validated decision-support product.
 
 ## Clinical Disclaimer
 
-The materials in this repository are provided for research,
-
-demonstration, and informational purposes only.
+The contents are provided for research communication, academic
+reference, and professional portfolio presentation only.
 
 They must not be used to:
 
 - make clinical decisions;
-
-- diagnose or treat any patient;
-
-- determine ventilator settings in clinical practice;
-
+- diagnose or treat a patient;
+- determine real-world ventilator settings;
 - replace professional medical judgment; or
-
-- support real-world patient care without appropriate independent
-
-  validation, regulatory review, institutional approval, and clinical
-
-  governance.
+- support patient care without independent validation, institutional
+  approval, clinical governance, and applicable regulatory review.
 
 ## Data Availability and Privacy
 
 Clinical source data are not included in this repository.
 
 Patient-level data, identifiable information, private institutional
+records, credentials, restricted datasets, and confidential clinical
+materials are not publicly distributed.
 
-records, access credentials, model checkpoints, and restricted research
+## Citation and Reuse
 
-materials will not be publicly distributed through this repository.
+The research may be cited with appropriate attribution.
 
-## Intellectual Property
+Citation does not grant permission to reproduce, modify, redistribute,
+or incorporate protected materials into another research project,
+publication, thesis, dissertation, course project, system, product, or
+derivative work.
 
-Unless otherwise indicated, original figures, visualizations, diagrams,
+For the recommended citation, see [CITATION.cff](CITATION.cff).
 
-interface designs, documentation, and presentation materials are
+For detailed restrictions, see:
 
-protected by copyright.
-
-For detailed terms, see [COPYRIGHT.md](COPYRIGHT.md).
+- [Terms of Use](TERMS_OF_USE.md)
+- [Copyright Notice](COPYRIGHT.md)
 
 ## No Open-Source License
 
-No open-source license is granted for the contents of this repository
-
-unless a specific file or component is expressly accompanied by a
-
-separate license or written permission.
-
+No open-source license is granted unless a specific file or component is
+expressly accompanied by a separate written license.

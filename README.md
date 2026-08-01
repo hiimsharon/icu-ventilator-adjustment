@@ -129,17 +129,46 @@ Taiwan record will be linked here after publication.
 
 ---
 
-## Research and Use Notice
+---
+
+## Citation
+
+When referencing this research portfolio, use:
+
+> Huang, S. (2026). *ICU Mechanical Ventilator Adjustment: A Three-Phase
+> Clinical Decision Framework Based on Multivariate Time-Series Analysis*
+> [Research portfolio]. GitHub.  
+> https://github.com/hiimsharon/icu-ventilator-adjustment
+
+Citation acknowledges the source but does not grant permission to copy,
+adapt, redistribute, or incorporate protected materials into another
+research project.
+
+GitHub citation metadata are available in [CITATION.cff](CITATION.cff).
+
+---
+
+## Research Portfolio Notice
 
 Clinical source data are not distributed through this repository.
 
-This repository is intended for research communication, academic
-demonstration, and professional portfolio presentation. The materials
-must not be used to make clinical decisions or determine real-world
-ventilator settings.
+This repository is provided for portfolio presentation, research
+communication, and academic reference. No open-source license or
+general reuse permission is granted.
 
-- [Research and Use Notice](NOTICE.md)
+Academic, educational, non-commercial, or research use does not by
+itself grant permission to reproduce, adapt, redistribute, or
+incorporate protected materials into another work.
+
+A citation alone does not authorize reuse of figures, visualizations,
+workflow diagrams, interface designs, documentation, source code,
+models, or other protected research materials.
+
+See:
+
+- [Terms of Use](TERMS_OF_USE.md)
 - [Copyright Notice](COPYRIGHT.md)
+- [Research and Use Notice](NOTICE.md)
 
 ---
 
@@ -149,8 +178,9 @@ ventilator settings.
 
 Copyright © 2026 Sha Huang. All Rights Reserved.
 
-Original figures, visualizations, diagrams, documentation, interface
-designs, and presentation materials are protected by copyright.
+Public access, citation, forking, cloning, or downloading does not grant
+permission to reproduce, modify, redistribute, or reuse protected
+research materials.
 
 </sub>
 
