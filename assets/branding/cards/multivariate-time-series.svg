@@ -1,0 +1,112 @@
+<svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="760"
+        height="285"
+        viewBox="0 0 760 285"
+        role="img"
+        aria-label="Multivariate Time-Series"
+    >
+        <defs>
+            <linearGradient id="cardBackground" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.98"/>
+                <stop offset="55%" stop-color="#F8FAFC" stop-opacity="0.94"/>
+                <stop offset="100%" stop-color="#EFF6FF" stop-opacity="0.88"/>
+            </linearGradient>
+
+            <linearGradient id="accentGlow" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0%" stop-color="#0F766E" stop-opacity="0.95"/>
+                <stop offset="100%" stop-color="#0F766E" stop-opacity="0.18"/>
+            </linearGradient>
+
+            <filter id="softShadow" x="-20%" y="-20%" width="140%" height="160%">
+                <feDropShadow
+                    dx="0"
+                    dy="9"
+                    stdDeviation="12"
+                    flood-color="#0F172A"
+                    flood-opacity="0.14"
+                />
+            </filter>
+        </defs>
+
+        <rect
+            x="18"
+            y="14"
+            width="724"
+            height="245"
+            rx="24"
+            fill="url(#cardBackground)"
+            stroke="#CBD5E1"
+            stroke-width="1.3"
+            filter="url(#softShadow)"
+        />
+
+        <rect
+            x="18"
+            y="14"
+            width="8"
+            height="245"
+            rx="4"
+            fill="url(#accentGlow)"
+        />
+
+        <circle
+            cx="692"
+            cy="62"
+            r="27"
+            fill="#0F766E"
+            opacity="0.09"
+        />
+
+        <circle
+            cx="692"
+            cy="62"
+            r="7"
+            fill="#0F766E"
+            opacity="0.92"
+        />
+
+        <text
+            x="42"
+            y="57"
+            font-family="Arial, Helvetica, sans-serif"
+            font-size="14"
+            font-weight="700"
+            letter-spacing="1.8"
+            fill="#0F766E"
+        >TEMPORAL MODELING</text>
+
+        
+            <text
+                x="42"
+                y="104"
+                font-family="Arial, Helvetica, sans-serif"
+                font-size="29"
+                font-weight="700"
+                fill="#0F172A"
+            >Multivariate Time-Series</text>
+            
+
+        
+            <text
+                x="42"
+                y="166"
+                font-family="Arial, Helvetica, sans-serif"
+                font-size="18"
+                font-weight="400"
+                fill="#475569"
+            >Learns temporal relationships among ventilator</text>
+            
+            <text
+                x="42"
+                y="191"
+                font-family="Arial, Helvetica, sans-serif"
+                font-size="18"
+                font-weight="400"
+                fill="#475569"
+            >settings and patient-response variables.</text>
+            
+
+        
+    </svg>
+    
