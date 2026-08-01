@@ -227,9 +227,12 @@ task.
 
 
 **應用深度學習方法於加護病房呼吸器調參之研究**  
-*Applying Deep Learning Technique to Parameter Adjusting of Mechanical Ventilator ICU*
+Applying Deep Learning Technique to Parameter Adjusting of Mechanical Ventilator ICU
 
 **黃筱雯（2026）**
+
+<br>
+
 <sub>
 The official thesis record and permanent public access link will be added after publication.
 </sub>
