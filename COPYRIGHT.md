@@ -13,7 +13,7 @@ Protected original materials include, without limitation:
 - figures, visualizations, and graphical layouts;
 - interface and research prototype designs;
 - source code and configuration content;
-- model-related materials and outputs; and
+- trained models, model outputs, and related materials; and
 - original presentation and organization of the research.
 
 No open-source license or general reuse permission is granted.
@@ -23,16 +23,14 @@ itself grant permission to reproduce, modify, adapt, redistribute,
 republish, translate, redraw, or incorporate protected materials into
 another work.
 
-The research may be identified or discussed by properly acknowledging
+The research may be identified or discussed by clearly acknowledging
 the author, research title, year, and original repository source.
+Acknowledgment does not grant permission to copy, modify, redistribute,
+adapt, or incorporate protected content into another project,
+publication, system, dataset, model, product, or derivative work.
 
-Acknowledgment or citation does not grant permission to copy, modify,
-redistribute, adapt, or incorporate protected content into another
-research project, paper, thesis, dissertation, academic project,
-presentation, system, product, dataset, model, or derivative work.
-
-Any reuse beyond a lawful and properly attributed limited citation
-requires prior written permission from the copyright holder.
+Any reuse beyond applicable legal exceptions requires prior written
+permission from the copyright holder.
 
 ## Third-Party Materials
 

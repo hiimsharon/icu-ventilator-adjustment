@@ -2,20 +2,14 @@
 
 ## Project Status
 
-This repository presents research and portfolio materials from a
-master's research project concerning ICU mechanical ventilator
-adjustment based on multivariate time-series analysis.
+This repository presents portfolio materials from a master's research
+project concerning ICU mechanical ventilator adjustment based on
+multivariate time-series analysis.
 
-The research includes:
-
-- clinical data preparation and multivariate time-series construction;
-- LSTM and GRU recurrent neural network modeling;
-- Bayesian hyperparameter optimization using the
-  Tree-structured Parzen Estimator;
-- repeated independent data splitting and model evaluation;
-- adjustment requirement determination;
-- mode adjustment direction classification; and
-- parameter adjustment prediction.
+The project includes clinical data preparation, time-series sample
+construction, LSTM and GRU modeling, Bayesian hyperparameter
+optimization, repeated data splitting, model evaluation, and three
+connected ventilator adjustment decision tasks.
 
 ## Clinical Disclaimer
 
@@ -36,21 +30,20 @@ They must not be used to:
 Clinical source data are not included in this repository.
 
 Patient-level records, identifiable information, private institutional
-records, credentials, restricted datasets, and confidential clinical
-materials are not publicly distributed.
+records, access credentials, restricted datasets, and confidential
+clinical materials are not publicly distributed.
 
-## Citation and Reuse
+## Acknowledgment and Reuse
 
-This research may be identified, discussed, or cited with clear
-acknowledgment of the author, research title, year, and repository
-source.
+This research may be identified or discussed by clearly acknowledging
+the author, research title, year, and original repository source.
 
-Citation does not grant permission to reproduce, modify, redistribute,
-adapt, or incorporate protected research materials into another
+Acknowledgment does not grant permission to reproduce, modify,
+redistribute, adapt, or incorporate protected materials into another
 research project, publication, thesis, dissertation, academic project,
 system, product, dataset, model, or derivative work.
 
-For detailed restrictions, see:
+For detailed conditions, see:
 
 - [Terms of Use](TERMS_OF_USE.md)
 - [Copyright Notice](COPYRIGHT.md)

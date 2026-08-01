@@ -7,20 +7,50 @@
 <br>
 
 This project learns and predicts the clinical decision workflow used
-for ICU mechanical ventilator adjustment. Multivariate ventilator
-time-series data are processed through three sequential decision tasks:
-adjustment requirement determination, mode adjustment direction
-classification, and parameter adjustment prediction.
+for ICU mechanical ventilator adjustment through multivariate
+time-series analysis.
 
 <br>
 
+[Research Scope](#research-scope) ·
+[Research Highlights](#research-highlights) ·
 [Research Framework](#research-framework) ·
-[Data Preparation](#data-preparation) ·
-[Model Development](#model-development) ·
-[Decision Framework](#three-phase-decision-framework) ·
+[Methodology](#methodology) ·
+[Phase Repositories](#phase-repositories) ·
 [Master Thesis](#master-thesis)
 
 </div>
+
+---
+
+## Research Scope
+
+<table>
+  <tr>
+    <td width="28%"><strong>Clinical Domain</strong></td>
+    <td>Intensive Care Unit</td>
+  </tr>
+  <tr>
+    <td><strong>Research Topic</strong></td>
+    <td>Mechanical Ventilator Adjustment</td>
+  </tr>
+  <tr>
+    <td><strong>Data Structure</strong></td>
+    <td>Multivariate Ventilator Time-Series</td>
+  </tr>
+  <tr>
+    <td><strong>Sequence Models</strong></td>
+    <td>Long Short-Term Memory and Gated Recurrent Unit</td>
+  </tr>
+  <tr>
+    <td><strong>Model Optimization</strong></td>
+    <td>Bayesian Hyperparameter Optimization using the Tree-structured Parzen Estimator</td>
+  </tr>
+  <tr>
+    <td><strong>Research Output</strong></td>
+    <td>Three sequential ventilator adjustment decisions</td>
+  </tr>
+</table>
 
 ---
 
@@ -29,19 +59,19 @@ classification, and parameter adjustment prediction.
 <table>
   <tr>
     <td width="33%" valign="top">
-      <h3>Clinical Decision Workflow</h3>
+      <h3>Clinical Decision Framework</h3>
       Learns and predicts the sequential clinical workflow used for
       ICU mechanical ventilator adjustment.
     </td>
     <td width="33%" valign="top">
-      <h3>Multivariate Time-Series</h3>
-      Analyzes temporally ordered ventilator settings and
-      patient-response variables across successive observations.
+      <h3>Multivariate Time-Series Analysis</h3>
+      Models temporal relationships among ventilator settings,
+      monitored responses, and successive adjustment decisions.
     </td>
     <td width="33%" valign="top">
-      <h3>Three-Phase Decision Framework</h3>
-      Integrates adjustment requirement determination, mode adjustment
-      direction classification, and parameter adjustment prediction.
+      <h3>Bayesian Hyperparameter Optimization</h3>
+      Applies the Tree-structured Parzen Estimator to optimize model
+      configurations before final model selection.
     </td>
   </tr>
 </table>
@@ -50,28 +80,20 @@ classification, and parameter adjustment prediction.
 
 ## Research Framework
 
-The overall research workflow consists of five connected components:
-data collection and preprocessing, phase-specific sample construction,
-model development and training, the three-phase ventilator adjustment
-decision framework, and model evaluation.
+The complete research workflow is organized into five connected
+components: data collection and preprocessing, phase-specific sample
+construction, model development and training, three-phase decision
+modeling, and model evaluation.
 
-ICU mechanical ventilator records are first reviewed, processed, and
-organized as multivariate time-series data. Adjustment events, mode
-transitions, temporal sequences, and task-specific samples are then
+ICU ventilator records are first reviewed and organized into
+multivariate temporal sequences. Independent samples, adjustment
+events, mode transitions, and prediction targets are subsequently
 constructed according to the objective of each research phase.
 
-LSTM and GRU models are developed for the three decision tasks.
-Hyperparameter configurations are optimized using the
-Tree-structured Parzen Estimator, followed by model selection and
-phase-specific evaluation.
-
-The resulting framework learns and predicts the clinical decision
-workflow used for ventilator adjustment:
-
-1. determining whether the ventilator setting requires adjustment;
-2. classifying the direction of ventilator mode adjustment; and
-3. predicting the adjustment magnitude of pressure control and
-   respiratory rate.
+The completed framework converts sequential ventilator information
+into three linked decisions: adjustment requirement determination,
+mode adjustment direction classification, and parameter adjustment
+prediction.
 
 <p align="center">
   <a href="assets/figures/framework/research-framework.jpg">
@@ -85,36 +107,33 @@ workflow used for ventilator adjustment:
 
 <p align="center">
   <sub>
-    Overall research workflow integrating data preparation,
-    time-series construction, model development, the three-phase
-    decision framework, and model evaluation.
+    Overall workflow of data preparation, time-series construction,
+    model development, three-phase decision modeling, and evaluation.
   </sub>
 </p>
 
 ---
 
-## Data Preparation
+## Methodology
 
-The data preparation procedure is designed according to the objective
-of each decision phase while maintaining a consistent multivariate
-time-series modeling strategy.
+### Data Preparation
 
 <table>
   <tr>
     <td width="33%" valign="top">
       <h3>Data Processing</h3>
-      Clinical data quality review, abnormal-value handling, temporal
-      organization, and ventilator mode representation.
+      Reviews data quality, handles predefined abnormal conditions,
+      organizes temporal records, and represents ventilator modes.
     </td>
     <td width="33%" valign="top">
       <h3>Sample Construction</h3>
-      Adjustment-event definition, mode-transition identification,
-      independent sample segmentation, and phase-specific selection.
+      Defines adjustment events and mode transitions, segments
+      independent samples, and applies phase-specific selection rules.
     </td>
     <td width="33%" valign="top">
       <h3>Sequence Generation</h3>
-      Sliding-window construction, multivariate temporal sequences,
-      task-specific labels, and regression targets.
+      Constructs sliding-window time-series samples with task-specific
+      classification labels or regression targets.
     </td>
   </tr>
 </table>
@@ -122,66 +141,43 @@ time-series modeling strategy.
 Clinical source data, patient-level records, and restricted
 institutional materials are not distributed through this repository.
 
----
+<br>
 
-## Model Development
+### Model Development
 
 <table>
   <tr>
-    <td width="25%" valign="top">
-      <h3>Time-Series Input</h3>
-      Multivariate sequential inputs are constructed separately for
-      each ventilator adjustment decision task.
+    <td width="33%" valign="top">
+      <h3>Sequence Modeling</h3>
+      Develops LSTM and GRU architectures for multivariate
+      time-series classification and regression.
     </td>
-    <td width="25%" valign="top">
-      <h3>LSTM and GRU</h3>
-      Recurrent neural network architectures are developed and compared
-      for classification and regression objectives.
-    </td>
-    <td width="25%" valign="top">
+    <td width="33%" valign="top">
       <h3>Hyperparameter Optimization</h3>
-      Bayesian optimization using the Tree-structured Parzen Estimator
-      is applied to identify suitable model configurations.
+      Uses Bayesian optimization with the Tree-structured Parzen
+      Estimator to search suitable model configurations.
     </td>
-    <td width="25%" valign="top">
+    <td width="33%" valign="top">
       <h3>Model Selection</h3>
-      Models are selected and evaluated using repeated independent data
-      splits and task-specific performance measures.
+      Compares candidate models using repeated independent data
+      splits and decision-task-specific selection criteria.
     </td>
   </tr>
 </table>
 
----
+<br>
 
-## Three-Phase Decision Framework
+### Model Evaluation
 
-<table>
-  <tr>
-    <td width="33%" valign="top">
-      <h3>Phase 1</h3>
-      <strong>Adjustment Requirement Determination</strong>
-      <br><br>
-      Uses multivariate ventilator time-series data to determine whether
-      the current ventilator setting should be maintained or adjusted.
-    </td>
-    <td width="33%" valign="top">
-      <h3>Phase 2-1</h3>
-      <strong>Mode Adjustment Direction</strong>
-      <br><br>
-      Classifies the adjustment direction as maintaining the current
-      mode, decreasing ventilator support, or increasing ventilator
-      support.
-    </td>
-    <td width="33%" valign="top">
-      <h3>Phase 2-2</h3>
-      <strong>Parameter Adjustment Prediction</strong>
-      <br><br>
-      Predicts the adjustment magnitude of pressure control and
-      respiratory rate after the mode adjustment direction is
-      determined.
-    </td>
-  </tr>
-</table>
+Classification tasks are evaluated using accuracy, precision, recall,
+F1-score, AUROC, and confusion-matrix analysis. Parameter adjustment
+prediction is evaluated using correlation-based and
+threshold-based agreement measures appropriate to the regression
+objective.
+
+Evaluation is performed separately for each decision phase so that
+model performance remains aligned with the corresponding research
+task.
 
 ---
 
@@ -193,8 +189,8 @@ institutional materials are not distributed through this repository.
       <h3>Phase 1</h3>
       <strong>Adjustment Requirement Determination</strong>
       <br><br>
-      Uses multivariate ventilator time-series data to determine whether
-      the current ventilator setting should be maintained or adjusted.
+      Determines whether the current ventilator setting should be
+      maintained or adjusted.
       <br><br>
       <a href="https://github.com/hiimsharon/icu-ventilator-phase-1">
         View Phase 1 Repository →
@@ -204,9 +200,8 @@ institutional materials are not distributed through this repository.
       <h3>Phase 2-1</h3>
       <strong>Mode Adjustment Direction</strong>
       <br><br>
-      Classifies the clinical adjustment direction as maintaining the
-      current mode, decreasing ventilator support, or increasing
-      ventilator support.
+      Classifies whether ventilator support should be maintained,
+      decreased, or increased.
       <br><br>
       <a href="https://github.com/hiimsharon/icu-ventilator-phase-2-1">
         View Phase 2-1 Repository →
@@ -217,8 +212,7 @@ institutional materials are not distributed through this repository.
       <strong>Parameter Adjustment Prediction</strong>
       <br><br>
       Predicts the adjustment magnitude of pressure control and
-      respiratory rate after the mode adjustment direction has been
-      determined.
+      respiratory rate.
       <br><br>
       <a href="https://github.com/hiimsharon/icu-ventilator-phase-2-2">
         View Phase 2-2 Repository →
@@ -231,47 +225,27 @@ institutional materials are not distributed through this repository.
 
 ## Master Thesis
 
-**Applying Deep Learning Methods to Mechanical Ventilator Adjustment
-in the Intensive Care Unit**
 
-Master's thesis, July 2026.
+**應用深度學習方法於加護病房呼吸器調參之研究**  
+*Applying Deep Learning Technique to Parameter Adjusting of Mechanical Ventilator ICU*
 
-The official thesis record and public link will be updated here after
-they become available through the National Digital Library of Theses
-and Dissertations in Taiwan.
-
+**黃筱雯（2026）**。The official thesis record and permanent public
+access link will be added after publication.
 ---
 
 ## Research Portfolio Notice
 
-Clinical source data, patient-level records, restricted institutional
-materials, and confidential research data are not distributed through
-this repository.
+Clinical source data and patient-level records are not publicly
+distributed. Public access to this repository does not grant an
+open-source license or general reuse permission.
 
-This repository is publicly accessible for research presentation,
-professional portfolio review, and academic reference. Public access
-does not grant an open-source license or general permission to reuse
-the contents.
+This research may be identified or discussed by clearly acknowledging
+**Sha Huang**, the research title, the year **2026**, and the original
+repository link. Acknowledgment does not grant permission to reproduce,
+adapt, redistribute, or incorporate protected materials into another
+work.
 
-This research may be identified, discussed, or cited by clearly
-acknowledging:
-
-- the author: **Sha Huang**;
-- the research title: **ICU Mechanical Ventilator Adjustment**;
-- the year: **2026**; and
-- the original repository link.
-
-Acknowledgment or citation does not grant permission to reproduce,
-republish, redistribute, modify, translate, redraw, adapt, or
-incorporate protected materials into another research project,
-publication, thesis, dissertation, academic project, presentation,
-software system, commercial product, machine-learning dataset, or
-derivative work.
-
-Any reuse beyond a lawful and properly attributed limited citation
-requires prior written permission from the copyright holder.
-
-See:
+Detailed conditions are provided in:
 
 - [Terms of Use](TERMS_OF_USE.md)
 - [Copyright Notice](COPYRIGHT.md)

@@ -4,55 +4,52 @@ Copyright © 2026 Sha Huang. All Rights Reserved.
 
 ## Repository Purpose
 
-This repository is provided for research presentation, professional
-portfolio review, and academic reference.
+This repository is made publicly accessible for research presentation,
+professional portfolio review, and academic reference.
 
-Public availability does not grant an open-source license or general
+Public accessibility does not grant an open-source license or general
 permission to reuse the repository contents.
 
-## Citation and Acknowledgment
+## Acknowledgment of the Research
 
-This research may be identified, discussed, reviewed, or cited by
+This research may be identified, discussed, reviewed, or referenced by
 clearly acknowledging:
 
 - **Author:** Sha Huang
 - **Research title:** ICU Mechanical Ventilator Adjustment
 - **Year:** 2026
-- **Source:** https://github.com/hiimsharon/icu-ventilator-adjustment
+- **Original source:** https://github.com/hiimsharon/icu-ventilator-adjustment
 
-A citation or acknowledgment identifies the source of the research.
-
-Citation does not grant permission to reproduce, republish,
-redistribute, modify, translate, redraw, adapt, or incorporate
-protected materials into another work.
+Acknowledgment identifies the source of the research. It does not grant
+permission to reproduce, redistribute, republish, modify, translate,
+redraw, adapt, or incorporate protected materials into another work.
 
 ## Permission Required
 
 Prior written permission from the copyright holder is required before
 protected materials may be:
 
-- reproduced or republished;
-- redistributed or publicly transmitted;
-- translated, modified, adapted, or redrawn;
-- included in another research project;
-- included in a journal paper, thesis, dissertation, academic project,
-  report, presentation, teaching material, or publication;
+- reproduced, republished, or redistributed;
+- modified, translated, adapted, or redrawn;
+- incorporated into another research project;
+- included in a paper, thesis, dissertation, academic project,
+  presentation, teaching material, report, or publication;
 - incorporated into another software system, interface, workflow,
   dataset, model, or derivative implementation;
 - used for machine-learning or generative-model training,
   fine-tuning, evaluation, or dataset construction; or
-- used for commercial, institutional, consulting, or
-  product-development purposes.
+- used for institutional, consulting, product-development, or
+  commercial purposes.
 
 Protected materials include, without limitation:
 
 - original figures and visualizations;
 - research framework and workflow diagrams;
 - interface and prototype designs;
-- written documentation and explanatory content;
+- documentation and explanatory content;
 - source code and configuration files;
-- model outputs and trained models; and
-- original presentation and organization of the research.
+- trained models and model outputs; and
+- original organization and presentation of the research.
 
 Academic, educational, research, or non-commercial status does not by
 itself grant permission.
@@ -67,19 +64,20 @@ No permission is granted to access, reconstruct, infer, redistribute,
 or attempt to identify restricted clinical information associated with
 this research.
 
-## Forking and Cloning
+## Forking, Cloning, and Downloading
 
 Forking, cloning, downloading, or viewing this repository does not
 grant permission to reuse, redistribute, modify, publish, or
 incorporate protected materials into another work.
 
-## Lawful Limited Citation
+## Applicable Legal Exceptions
 
-Nothing in these terms is intended to restrict a use that is
-independently permitted by applicable law.
+Nothing in these terms is intended to restrict uses independently
+permitted by applicable law.
 
-Any lawful limited citation must clearly identify the author and
-original source and remain within the legally permitted scope.
+Any legally permitted limited quotation or reference must clearly
+identify the author and original source and remain within the legally
+permitted scope.
 
 ## Permission Requests
 
