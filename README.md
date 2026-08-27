@@ -17,7 +17,8 @@ time-series analysis.
 [Research Framework](#research-framework) ·
 [Methodology](#methodology) ·
 [Phase Repositories](#phase-repositories) ·
-[Master Thesis](#master-thesis)
+[Master Thesis](#master-thesis) ·
+[Citation & References](#citation--references)
 
 </div>
 
@@ -232,9 +233,51 @@ Applying Deep Learning Techniques for Mechanical Ventilator Parameter Adjustment
 
 Kaohsiung Medical University
 
+**[View Thesis Record →](https://hdl.handle.net/11296/7442av)**
+
+
+
+---
+
+## Citation & References
+
+### Citing This Research
+
+If you reference this research in academic work, please cite the master's thesis:
+
+> 黃筱雯（2026）。《應用深度學習方法於加護病房呼吸器調參之研究》。高雄醫學大學。https://hdl.handle.net/11296/7442av
+
 <sub>
-The official thesis record and permanent public access link will be added after publication.
+This citation is provided as a practical reference format. The bibliographic
+details may be updated later to match the final official thesis record.
 </sub>
+
+<br>
+
+### Reference List
+
+The complete reference list used in this research is available in the master's thesis.
+
+**[View Thesis Record and References →](https://hdl.handle.net/11296/7442av)**
+
+<br>
+
+### Access During the Embargo Period
+
+If the thesis full text is not yet publicly available during the embargo period,
+please refer to the official instructions provided by Kaohsiung Medical University Library.
+
+**[Thesis Access Instructions →](https://olis.kmu.edu.tw/index.php/zh-TW/lib-faq/10-)**
+
+<br>
+
+<sub>
+Citation or acknowledgment identifies the source of this research and does not
+grant permission to reproduce, modify, adapt, redistribute, or reuse protected
+research materials. For detailed conditions, see
+<a href="TERMS_OF_USE.md">Terms of Use</a>.
+</sub>
+
 
 ---
 
