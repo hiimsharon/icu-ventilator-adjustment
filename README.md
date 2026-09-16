@@ -15,7 +15,7 @@ in intensive care units using multivariate time-series data.
 [Research Scope](#research-scope) ·
 [Research Highlights](#research-highlights) ·
 [Research Framework](#research-framework) ·
-[Methodology](#methodology) ·
+[Methodology & Code](#methodology--data-preprocessing) ·
 [Phase Repositories](#phase-repositories) ·
 [Master Thesis](#master-thesis) ·
 [Citation & References](#citation--references)
@@ -26,32 +26,9 @@ in intensive care units using multivariate time-series data.
 
 ## Research Scope
 
-<table>
-  <tr>
-    <td width="28%"><strong>Clinical Domain</strong></td>
-    <td>Intensive Care Unit (ICU)</td>
-  </tr>
-  <tr>
-    <td><strong>Research Topic</strong></td>
-    <td>Mechanical Ventilator Parameter Adjustment</td>
-  </tr>
-  <tr>
-    <td><strong>Data Structure</strong></td>
-    <td>Multivariate Ventilator Time-Series</td>
-  </tr>
-  <tr>
-    <td><strong>Sequence Models</strong></td>
-    <td>Long Short-Term Memory (LSTM) and Gated Recurrent Unit (GRU)</td>
-  </tr>
-  <tr>
-    <td><strong>Model Optimization</strong></td>
-    <td>Bayesian Hyperparameter Optimization via Tree-structured Parzen Estimator (TPE)</td>
-  </tr>
-  <tr>
-    <td><strong>Research Output</strong></td>
-    <td>Three-Stage Clinical Decision Framework</td>
-  </tr>
-</table>
+This research investigates high-acuity clinical environments within the Intensive Care Unit (ICU), focusing on the computational modeling of mechanical ventilator parameter adjustments. By synthesizing multivariate ventilator telemetry and setting streams, the framework captures complex temporal dynamics to assist clinical decision-making.
+
+The methodological backbone integrates deep sequence modeling—specifically employing Long Short-Term Memory (LSTM) and Gated Recurrent Unit (GRU) architectures—coupled with rigorous hyperparameter optimization via the Tree-structured Parzen Estimator (TPE) to ensure robust generalization across clinical cohorts.
 
 ---
 
@@ -109,13 +86,16 @@ parameter values.
 
 ---
 
-## Methodology
+## Methodology & Data Preprocessing
 
-### Data Preparation & Cohort Statistics
+### Data Pipeline Overview
 
 The retrospective dataset comprises high-frequency telemetry and setting
 records from **355 patients** undergoing invasive mechanical ventilation,
 totaling **11,298,127 minutes** of multivariate time-series observations.
+
+> **📂 Data Preprocessing Codebase:**
+> Because the data engineering pipeline involves multiple modular scripts handling signal filtering, anomaly cleaning, and window slicing across diverse operational paths, the complete collection of preprocessing Python scripts (`.py`) and execution guidelines are documented in **[PREPROCESSING.md](PREPROCESSING.md)**.
 
 <table>
   <tr>
