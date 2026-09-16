@@ -94,7 +94,7 @@ The retrospective dataset comprises high-frequency telemetry and setting
 records from **355 patients** undergoing invasive mechanical ventilation,
 totaling **11,298,127 minutes** of multivariate time-series observations.
 
-> **📂 Data Preprocessing Codebase:**
+> ** Data Preprocessing Codebase:**
 > Because the data engineering pipeline involves multiple modular scripts handling signal filtering, anomaly cleaning, and window slicing across diverse operational paths, the complete collection of preprocessing Python scripts (`.py`) and execution guidelines are documented in **[PREPROCESSING.md](PREPROCESSING.md)**.
 
 <table>
