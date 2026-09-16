@@ -1,24 +1,24 @@
-# Data Preprocessing & Pipeline Documentation
+# Data Preprocessing Pipeline
 
 由於重症加護病房的呼吸器原始資料來自實際臨床照護，資料可能存在欄位命名不一致、時間格式不同、缺失值、重複時間戳記、資料中斷及不同資料來源格式混用等情形。為建立可供後續事件定義與模型建構的時間序列資料，本研究依序進行研究對象納入與排除、資料讀取與格式統一、時間欄位整理、資料品質檢核、呼吸器模式整理及時間序列整理等程序，整體資料前處理流程如下圖所示。
 
 ---
 
-## 前處理流程圖 (Workflow)
+## 前處理流程圖
 
 <p align="center">
-  <img src="assets/figures/preprocessing/preprocessing-workflow.png" width="760" alt="Data Preprocessing Workflow">
+  <img src="assets/figures/3_資料納入與排除.jpg" width="760" alt="Data Preprocessing Workflow">
 </p>
 
 <p align="center">
   <sub>
-    <strong>版權與使用宣告：</strong> 上述圖片與流程架構受著作權保護，<strong>不得任意轉載或使用</strong>。若需引用或使用相關內容，必須明確標註作者為 <strong>Sha Huang</strong>。
+    <strong>版權宣告：</strong> 本圖表與內容受著作權保護，<strong>不得任意轉載或使用</strong>。若需引用或參考，請務必明確標註作者為 <strong>Sha Huang</strong>。
   </sub>
 </p>
 
 ---
 
-## ⚙️ 前處理執行步驟與核心邏輯
+## 處理步驟與核心邏輯
 
 ### 1. 資料格式統一與欄位標準化
 原始資料包含 CSV 與 Excel 兩種格式，採批次方式讀取。為降低不同來源資料於欄位名稱、編碼格式及資料格式上的差異，本研究首先進行欄位名稱標準化，包括欄位大小寫統一、空白及特殊符號移除、欄位別名整併及資料格式統一，讓有相同臨床意義但名稱不同的欄位皆轉換為一致命名。
@@ -31,15 +31,9 @@
 
 ---
 
-## 前處理程式碼檔案（上傳區）
+## 程式碼檔案
 
-> **Notice:** 相關前處理程式碼檔案（包含多份 `.py` 腳本）將於 **9月底** 正式掛上與更新。
-
-以下為預計上傳的程式碼檔案佔位清單（檔名僅供參考）：
-* `data_loader_v1.py` *(Placeholder)*
-* `clean_time_series.py` *(Placeholder)*
-* `filter_anomalies_test.py` *(Placeholder)*
-* `preprocess_pipeline_main.py` *(Placeholder)*
+> **Notice:** 相關前處理程式碼檔案（包含多份 `.py` 腳本）預計將於 **9月底** 正式掛上與更新。
 
 ---
 
