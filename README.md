@@ -15,7 +15,6 @@ time-series analysis.
 [Research Scope](#research-scope) ·
 [Research Highlights](#research-highlights) ·
 [Research Framework](#research-framework) ·
-[Dataset Source](#dataset-source) ·
 [Methodology](#methodology) ·
 [Phase Repositories](#phase-repositories) ·
 [Master Thesis](#master-thesis) ·
@@ -115,32 +114,11 @@ adjustment direction prediction, and parameter adjustment recommendation.
 
 ---
 
-## Dataset Source
-
-<table>
-  <tr>
-    <td width="100%" valign="top">
-      <h3>Shared Clinical Dataset Archives</h3>
-      <strong>Multivariate Ventilator CSV Archives (.zip)</strong>
-      <br><br>
-      Provides the unified time-series dataset archives shared across all three research phases. You can download the compressed CSV packages directly from the release assets below:
-      <br><br>
-      <ul>
-        <li><a href="https://github.com/hiimsharon/icu-ventilator-adjustment/releases/download/dataset-v1/20251024T163904Z.zip">Dataset Archive Part 1 (20251024T163904Z.zip)</a></li>
-        <li><a href="https://github.com/hiimsharon/icu-ventilator-adjustment/releases/download/dataset-v1/20251024T163906Z.zip">Dataset Archive Part 2 (20251024T163906Z.zip)</a></li>
-        <li><a href="https://github.com/hiimsharon/icu-ventilator-adjustment/releases/download/dataset-v1/20251024T163907Z.zip">Dataset Archive Part 3 (20251024T163907Z.zip)</a></li>
-        <li><a href="https://github.com/hiimsharon/icu-ventilator-adjustment/releases/download/dataset-v1/20260409T062155Z.zip">Dataset Archive Part 4 (20260409T062155Z.zip)</a></li>
-        <li><a href="https://github.com/hiimsharon/icu-ventilator-adjustment/releases/download/dataset-v1/20260409T062209Z.zip">Dataset Archive Part 5 (20260409T062209Z.zip)</a></li>
-      </ul>
-    </td>
-  </tr>
-</table>
-
----
-
 ## Methodology
 
 ### Data Preparation
+
+The original research dataset comprises clinical records from 355 patients receiving invasive mechanical ventilation, totaling 11,298,127 time-series records with a sampling frequency of one record per minute for ventilator monitoring and setting information. 
 
 <table>
   <tr>
@@ -162,8 +140,58 @@ adjustment direction prediction, and parameter adjustment recommendation.
   </tr>
 </table>
 
-Clinical source data, patient-level records, and restricted
-institutional materials are not distributed through this repository.
+#### Dataset Profile and Quality Statistics
+
+<table>
+  <tr>
+    <td width="30%"><strong>Category</strong></td>
+    <td width="40%"><strong>Statistical Item</strong></td>
+    <td><strong>Value</strong></td>
+  </tr>
+  <tr>
+    <td rowspan="2"><strong>Data Scale</strong></td>
+    <td>Original Patient Count</td>
+    <td>355 patients</td>
+  </tr>
+  <tr>
+    <td>Original Time-Series Records</td>
+    <td>11,298,127 records</td>
+  </tr>
+  <tr>
+    <td rowspan="2"><strong>Data Quality</strong></td>
+    <td>Available Data Ratio</td>
+    <td>80.89%</td>
+  </tr>
+  <tr>
+    <td>Unavailable Data Ratio</td>
+    <td>19.11%</td>
+  </tr>
+  <tr>
+    <td rowspan="2"><strong>Adjustment Event Distribution</strong></td>
+    <td>Adjustment Ratio in Available Data</td>
+    <td>0.81%</td>
+  </tr>
+  <tr>
+    <td>Non-Adjustment Ratio in Available Data</td>
+    <td>99.19%</td>
+  </tr>
+</table>
+
+<br>
+
+#### Shared Dataset Archives & Access
+
+The unified multivariate time-series data archives shared across all three research phases can be accessed and downloaded via the project release assets below:
+
+* **[Download Dataset Archive Part 1 (20251024T163904Z.zip)](https://github.com/hiimsharon/icu-ventilator-adjustment/releases/download/dataset-v1/20251024T163904Z.zip)**
+* **[Download Dataset Archive Part 2 (20251024T163906Z.zip)](https://github.com/hiimsharon/icu-ventilator-adjustment/releases/download/dataset-v1/20251024T163906Z.zip)**
+* **[Download Dataset Archive Part 3 (20251024T163907Z.zip)](https://github.com/hiimsharon/icu-ventilator-adjustment/releases/download/dataset-v1/20251024T163907Z.zip)**
+* **[Download Dataset Archive Part 4 (20260409T062155Z.zip)](https://github.com/hiimsharon/icu-ventilator-adjustment/releases/download/dataset-v1/20260409T062155Z.zip)**
+* **[Download Dataset Archive Part 5 (20260409T062209Z.zip)](https://github.com/hiimsharon/icu-ventilator-adjustment/releases/download/dataset-v1/20260409T062209Z.zip)**
+
+<sub>
+Clinical source data, patient-level records, and restricted institutional materials are not distributed through this repository, except for processed sample archives provided for non-commercial research use.
+</sub>
 
 <br>
 
