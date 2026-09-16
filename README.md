@@ -179,19 +179,14 @@ The original research dataset comprises clinical records from 355 patients recei
 
 <br>
 
-#### Shared Dataset Archives & Access
+#### IRB Approval & Data Access Statement
 
-The unified multivariate time-series data archives shared across all three research phases can be accessed and downloaded via the project release assets below:
-
-* **[Download Dataset Archive Part 1 (20251024T163904Z.zip)](https://github.com/hiimsharon/icu-ventilator-adjustment/releases/download/dataset-v1/20251024T163904Z.zip)**
-* **[Download Dataset Archive Part 2 (20251024T163906Z.zip)](https://github.com/hiimsharon/icu-ventilator-adjustment/releases/download/dataset-v1/20251024T163906Z.zip)**
-* **[Download Dataset Archive Part 3 (20251024T163907Z.zip)](https://github.com/hiimsharon/icu-ventilator-adjustment/releases/download/dataset-v1/20251024T163907Z.zip)**
-* **[Download Dataset Archive Part 4 (20260409T062155Z.zip)](https://github.com/hiimsharon/icu-ventilator-adjustment/releases/download/dataset-v1/20260409T062155Z.zip)**
-* **[Download Dataset Archive Part 5 (20260409T062209Z.zip)](https://github.com/hiimsharon/icu-ventilator-adjustment/releases/download/dataset-v1/20260409T062209Z.zip)**
-
-<sub>
-Clinical source data, patient-level records, and restricted institutional materials are not distributed through this repository, except for processed sample archives provided for non-commercial research use.
-</sub>
+> **Institutional Review Board (IRB) Notice:**
+> The collection and utilization of this clinical dataset have been formally reviewed and approved by the Institutional Review Board (IRB). 
+> 
+> * **Confidentiality & Compliance:** Clinical source data, patient-level medical records, and restricted institutional materials contain sensitive health information and are strictly protected. 
+> * **Access Restriction:** Public access to this repository does not grant permission to reproduce, distribute, or use the raw clinical data. Unauthorized use, redistribution, or commercial exploitation of these datasets is strictly prohibited.
+> * **Authorized Archives:** For authorized personnel or academic replication, processed sample archives are securely maintained under institutional guidelines. You can check the authorized release assets via the [Project Releases Page](https://github.com/hiimsharon/icu-ventilator-adjustment/releases).
 
 <br>
 
