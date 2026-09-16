@@ -6,9 +6,9 @@
 
 <br>
 
-This project learns and predicts the clinical decision workflow used
-for ICU mechanical ventilator adjustment through multivariate
-time-series analysis.
+This project implements a multi-phase clinical decision framework
+designed to model and predict mechanical ventilator adjustment workflows
+in intensive care units using multivariate time-series data.
 
 <br>
 
@@ -29,11 +29,11 @@ time-series analysis.
 <table>
   <tr>
     <td width="28%"><strong>Clinical Domain</strong></td>
-    <td>Intensive Care Unit</td>
+    <td>Intensive Care Unit (ICU)</td>
   </tr>
   <tr>
     <td><strong>Research Topic</strong></td>
-    <td>Mechanical Ventilator Adjustment</td>
+    <td>Mechanical Ventilator Parameter Adjustment</td>
   </tr>
   <tr>
     <td><strong>Data Structure</strong></td>
@@ -41,15 +41,15 @@ time-series analysis.
   </tr>
   <tr>
     <td><strong>Sequence Models</strong></td>
-    <td>Long Short-Term Memory and Gated Recurrent Unit</td>
+    <td>Long Short-Term Memory (LSTM) and Gated Recurrent Unit (GRU)</td>
   </tr>
   <tr>
     <td><strong>Model Optimization</strong></td>
-    <td>Bayesian Hyperparameter Optimization using the Tree-structured Parzen Estimator</td>
+    <td>Bayesian Hyperparameter Optimization via Tree-structured Parzen Estimator (TPE)</td>
   </tr>
   <tr>
     <td><strong>Research Output</strong></td>
-    <td>Three-stage ventilator adjustment decision framework</td>
+    <td>Three-Stage Clinical Decision Framework</td>
   </tr>
 </table>
 
@@ -60,19 +60,19 @@ time-series analysis.
 <table>
   <tr>
     <td width="33%" valign="top">
-      <h3>Clinical Decision Framework</h3>
-      Learns and predicts the sequential clinical workflow used for
-      ICU mechanical ventilator adjustment.
+      <h3>Clinical Workflow Modeling</h3>
+      Learns and predicts the sequential decision logic utilized by
+      clinicians during mechanical ventilation management.
     </td>
     <td width="33%" valign="top">
-      <h3>Multivariate Time-Series Analysis</h3>
-      Models temporal relationships among ventilator settings,
-      monitored responses, and successive adjustment decisions.
+      <h3>Multivariate Temporal Analysis</h3>
+      Captures complex dynamic interactions among ventilator settings,
+      patient physiological responses, and adjustment milestones.
     </td>
     <td width="33%" valign="top">
-      <h3>Bayesian Hyperparameter Optimization</h3>
-      Applies the Tree-structured Parzen Estimator to optimize model
-      configurations before final model selection.
+      <h3>Rigorous Optimization</h3>
+      Employs Bayesian optimization frameworks to systematically search
+      and stabilize network hyperparameter configurations.
     </td>
   </tr>
 </table>
@@ -81,19 +81,14 @@ time-series analysis.
 
 ## Research Framework
 
-The complete research workflow is organized into five connected
-components: data collection and preprocessing, phase-specific sample
-construction, model development and training, three-phase decision
-modeling, and model evaluation.
+The research architecture integrates data preprocessing, phase-specific
+sample formulation, sequence modeling, and decision evaluation into a
+cohesive pipeline. 
 
-ICU ventilator records are first reviewed and organized into
-multivariate temporal sequences. Independent samples, adjustment
-events, mode transitions, and prediction targets are subsequently
-constructed according to the objective of each research phase.
-
-The completed framework converts sequential ventilator information
-into three linked decisions: adjustment requirement determination,
-adjustment direction prediction, and parameter adjustment recommendation.
+Continuous ICU monitoring streams are structured into temporal intervals
+to predict three progressive clinical objectives: determining adjustment
+necessity, forecasting adjustment direction, and recommending precise
+parameter values.
 
 <p align="center">
   <a href="assets/figures/framework/research-framework.jpg">
@@ -107,8 +102,8 @@ adjustment direction prediction, and parameter adjustment recommendation.
 
 <p align="center">
   <sub>
-    Overall workflow of data preparation, time-series construction,
-    model development, three-phase decision modeling, and evaluation.
+    Systematic pipeline of temporal data processing, sequence generation,
+    three-phase decision modeling, and validation.
   </sub>
 </p>
 
@@ -116,77 +111,80 @@ adjustment direction prediction, and parameter adjustment recommendation.
 
 ## Methodology
 
-### Data Preparation
+### Data Preparation & Cohort Statistics
 
-The original research dataset comprises clinical records from 355 patients receiving invasive mechanical ventilation, totaling 11,298,127 time-series records with a sampling frequency of one record per minute for ventilator monitoring and setting information. 
+The retrospective dataset comprises high-frequency telemetry and setting
+records from **355 patients** undergoing invasive mechanical ventilation,
+totaling **11,298,127 minutes** of multivariate time-series observations.
 
 <table>
   <tr>
     <td width="33%" valign="top">
       <h3>Data Processing</h3>
-      Reviews data quality, handles predefined abnormal conditions,
-      organizes temporal records, and represents ventilator modes.
+      Filters signal anomalies, handles missing intervals, aligns
+      temporal timestamps, and encodes ventilator modes.
     </td>
     <td width="33%" valign="top">
-      <h3>Sample Construction</h3>
-      Defines adjustment events and mode transitions, segments
-      independent samples, and applies phase-specific selection rules.
+      <h3>Sample Formulation</h3>
+      Defines event boundaries, isolates transition states, and constructs
+      independent training windows tailored to each phase.
     </td>
     <td width="33%" valign="top">
       <h3>Sequence Generation</h3>
-      Constructs sliding-window time-series samples with task-specific
-      classification labels or regression targets.
+      Constructs sliding-window tensors mapped to task-specific
+      classification labels and regression targets.
     </td>
   </tr>
 </table>
 
-#### Dataset Profile and Quality Statistics
+#### Dataset Profile and Quality Metrics
 
 <table>
   <tr>
     <td width="30%"><strong>Category</strong></td>
-    <td width="40%"><strong>Statistical Item</strong></td>
-    <td><strong>Value</strong></td>
+    <td width="40%"><strong>Metric Description</strong></td>
+    <td><strong>Quantitative Value</strong></td>
   </tr>
   <tr>
-    <td rowspan="2"><strong>Data Scale</strong></td>
-    <td>Original Patient Count</td>
+    <td rowspan="2"><strong>Cohort Scale</strong></td>
+    <td>Total Patient Cohort</td>
     <td>355 patients</td>
   </tr>
   <tr>
-    <td>Original Time-Series Records</td>
+    <td>Raw Time-Series Observations</td>
     <td>11,298,127 records</td>
   </tr>
   <tr>
-    <td rowspan="2"><strong>Data Quality</strong></td>
+    <td rowspan="2"><strong>Data Integrity</strong></td>
     <td>Available Data Ratio</td>
     <td>80.89%</td>
   </tr>
   <tr>
-    <td>Unavailable Data Ratio</td>
+    <td>Unavailable / Masked Interval Ratio</td>
     <td>19.11%</td>
   </tr>
   <tr>
-    <td rowspan="2"><strong>Adjustment Event Distribution</strong></td>
-    <td>Adjustment Ratio in Available Data</td>
+    <td rowspan="2"><strong>Event Distribution</strong></td>
+    <td>Adjustment Interval Ratio</td>
     <td>0.81%</td>
   </tr>
   <tr>
-    <td>Non-Adjustment Ratio in Available Data</td>
+    <td>Non-Adjustment Interval Ratio</td>
     <td>99.19%</td>
   </tr>
 </table>
 
 <br>
 
-#### IRB Approval & Data Access Statement
+#### IRB Approval & Data Governance Statement
 
 > **Institutional Review Board (IRB) Notice:**
-> 本研究已通過高雄醫學大學附設中和紀念醫院人體研究倫理審查委員會審查（編號：KMUHIRB-E(I)-20240420）。
+> This study was approved by the Institutional Review Board of Kaohsiung Medical University Chung-Ho Memorial Hospital (Approval No.: KMUHIRB-E(I)-20240420).
 > 
-> * **Confidentiality & Compliance:** Clinical source data, patient-level medical records, and restricted institutional materials contain sensitive health information and are strictly protected. 
-> * **Access Restriction:** Public access to this repository does not grant permission to reproduce, distribute, or use the raw clinical data. Unauthorized use, redistribution, or commercial exploitation of these datasets is strictly prohibited.
-> * **Authorized Archives:** For authorized personnel or academic replication, processed sample archives are securely maintained under institutional guidelines. You can check the authorized release assets via the [Project Releases Page](https://github.com/hiimsharon/icu-ventilator-adjustment/releases), and view detailed guidelines in [DATA.md](DATA.md).
+> * **Data Privacy & Confidentiality:** Clinical source records, patient-level identifiers, and institutional materials contain sensitive medical information protected under clinical governance frameworks.
+> * **Non-Open Source Policy:** This repository is maintained strictly for academic research verification. **It is not an open-source software project for general public reuse.**
+> * **Access & Inquiry Protocol:** Public access to this repository does not grant reproduction, modification, or distribution rights. Any academic utilization, replication inquiry, or data access request **must be communicated to and approved by the author in advance**.
+> * **Authorized Archives:** Processed, non-identifiable sample archives are securely hosted via the [Project Releases Page](https://github.com/hiimsharon/icu-ventilator-adjustment/releases). Comprehensive guidelines are documented in [DATA.md](DATA.md).
 
 <br>
 
@@ -196,18 +194,18 @@ The original research dataset comprises clinical records from 355 patients recei
   <tr>
     <td width="33%" valign="top">
       <h3>Sequence Modeling</h3>
-      Develops LSTM and GRU architectures for multivariate
-      time-series classification and regression.
+      Implements deep recurrent networks (LSTM and GRU) optimized
+      for clinical multivariate forecasting.
     </td>
     <td width="33%" valign="top">
-      <h3>Hyperparameter Optimization</h3>
-      Uses Bayesian optimization with the Tree-structured Parzen
-      Estimator to search suitable model configurations.
+      <h3>Hyperparameter Tuning</h3>
+      Applies TPE-based Bayesian optimization to balance convergence
+      speed and generalization error.
     </td>
     <td width="33%" valign="top">
       <h3>Model Selection</h3>
-      Compares candidate models using repeated independent data
-      splits and decision-task-specific selection criteria.
+      Evaluates candidate checkpoints across independent cross-validation
+      folds using task-specific objective metrics.
     </td>
   </tr>
 </table>
@@ -216,15 +214,13 @@ The original research dataset comprises clinical records from 355 patients recei
 
 ### Model Evaluation
 
-Classification tasks are evaluated using accuracy, precision, recall,
-F1-score, AUROC, and confusion-matrix analysis. Parameter adjustment
-prediction is evaluated using correlation-based and
-threshold-based agreement measures appropriate to the regression
-objective.
+Classification performance is assessed via accuracy, precision, recall,
+F1-score, and area under the ROC curve (AUROC). Regression performance
+for parameter recommendation is evaluated using agreement and error
+metrics suited to physiological target distributions.
 
-Evaluation is performed separately for each decision phase so that
-model performance remains aligned with the corresponding research
-task.
+Evaluation protocols are independently structured for each phase to
+maintain alignment with specific clinical decision milestones.
 
 ---
 
@@ -236,8 +232,8 @@ task.
       <h3>Phase 1</h3>
       <strong>Adjustment Requirement Determination</strong>
       <br><br>
-      Determines whether the current ventilator setting should be
-      maintained or adjusted.
+      Binary classification determining whether ventilator adjustments
+      are required at the current time step.
       <br><br>
       <a href="https://github.com/hiimsharon/icu-ventilator-phase-1">
         View Phase 1 Repository →
@@ -247,8 +243,8 @@ task.
       <h3>Phase 2-1</h3>
       <strong>Adjustment Direction Prediction</strong>
       <br><br>
-      Predicts the direction of ventilator adjustment after the
-      requirement for adjustment has been determined.
+      Multi-class prediction isolating the trajectory of parameter
+      modifications following trigger confirmation.
       <br><br>
       <a href="https://github.com/hiimsharon/icu-ventilator-phase-2-1">
         View Phase 2-1 Repository →
@@ -258,8 +254,8 @@ task.
       <h3>Phase 2-2</h3>
       <strong>Parameter Adjustment Recommendation</strong>
       <br><br>
-      Recommends appropriate ventilator parameter adjustments
-      based on the identified adjustment direction.
+      Regression-based modeling providing optimal quantitative targets
+      for ventilator control settings.
       <br><br>
       <a href="https://github.com/hiimsharon/icu-ventilator-phase-2-2">
         View Phase 2-2 Repository →
@@ -280,67 +276,48 @@ Applying Deep Learning Techniques for Mechanical Ventilator Parameter Adjustment
 
 Kaohsiung Medical University
 
-**[View Thesis Record →](https://hdl.handle.net/11296/7442av)**
-
-
+**[View Official Thesis Record →](https://hdl.handle.net/11296/7442av)**
 
 ---
 
 ## Citation & References
 
-### Citing This Research
+### Academic Citation
 
-If you reference this research in academic work, please cite the master's thesis:
+If you reference this research framework or related materials, please cite the master's thesis:
 
-> 黃筱雯（2026）。《應用深度學習方法於加護病房呼吸器調參之研究》。高雄醫學大學。https://hdl.handle.net/11296/7442av
-
-<sub>
-This citation is provided as a practical reference format. The bibliographic
-details may be updated later to match the final official thesis record.
-</sub>
+> 黃筱雯（2026）。《應用深度學習方法於加護病房呼吸器調參之研究》。高雄醫學大學碩士論文。https://hdl.handle.net/11296/7442av
 
 <br>
 
-### Reference List
+### Reference Access
 
-The complete reference list used in this research is available in the master's thesis.
+Complete bibliographic references are cataloged within the formal thesis document.
 
-**[View Thesis Record and References →](https://hdl.handle.net/11296/7442av)**
-
-<br>
-
-### Access During the Embargo Period
-
-If the thesis full text is not yet publicly available during the embargo period,
-please refer to the official instructions provided by Kaohsiung Medical University Library.
-
-**[Thesis Access Instructions →](https://olis.kmu.edu.tw/index.php/zh-TW/lib-faq/10-)**
+**[Access Thesis and References →](https://hdl.handle.net/11296/7442av)**
 
 <br>
 
-<sub>
-Citation or acknowledgment identifies the source of this research and does not
-grant permission to reproduce, modify, adapt, redistribute, or reuse protected
-research materials. For detailed conditions, see
-<a href="TERMS_OF_USE.md">Terms of Use</a>.
-</sub>
+### Embargoed Access Notice
 
+If full-text access is restricted during the institutional embargo period,
+please consult the library guidelines provided by Kaohsiung Medical University.
+
+**[University Library Guidelines →](https://olis.kmu.edu.tw/index.php/zh-TW/lib-faq/10-)**
 
 ---
 
 ## Research Portfolio Notice
 
-Clinical source data and patient-level records are not publicly
-distributed. Public access to this repository does not grant an
-open-source license or general reuse permission.
+Clinical data pipelines and model assets are proprietary to the primary
+researcher. Public visibility does not constitute an open-source or permissive
+license grant.
 
-This research may be identified or discussed by clearly acknowledging
-**Sha Huang**, the research title, the year **2026**, and the original
-repository link. Acknowledgment does not grant permission to reproduce,
-adapt, redistribute, or incorporate protected materials into another
-work.
+Academic discussions or citations must explicitly attribute **Sha Huang**,
+the study title, the publication year (**2026**), and reference the core
+repository link. 
 
-Detailed conditions are provided in:
+Detailed governance policies are available in:
 
 - [Terms of Use](TERMS_OF_USE.md)
 - [Copyright Notice](COPYRIGHT.md)
@@ -352,10 +329,8 @@ Detailed conditions are provided in:
 
 <sub>
 
-Copyright © 2026 Sha Huang. All Rights Reserved.
-
-Academic, educational, non-commercial, or research use does not by
-itself grant permission to reuse protected research materials.
+Copyright © 2026 Sha Huang. All Rights Reserved. 
+Restricted to authorized academic research validation.
 
 </sub>
 
