@@ -182,11 +182,11 @@ The original research dataset comprises clinical records from 355 patients recei
 #### IRB Approval & Data Access Statement
 
 > **Institutional Review Board (IRB) Notice:**
-> The collection and utilization of this clinical dataset have been formally reviewed and approved by the Institutional Review Board (IRB). 
+> 本研究已通過高雄醫學大學附設中和紀念醫院人體研究倫理審查委員會審查（編號：KMUHIRB-E(I)-20240420）。
 > 
 > * **Confidentiality & Compliance:** Clinical source data, patient-level medical records, and restricted institutional materials contain sensitive health information and are strictly protected. 
 > * **Access Restriction:** Public access to this repository does not grant permission to reproduce, distribute, or use the raw clinical data. Unauthorized use, redistribution, or commercial exploitation of these datasets is strictly prohibited.
-> * **Authorized Archives:** For authorized personnel or academic replication, processed sample archives are securely maintained under institutional guidelines. You can check the authorized release assets via the [Project Releases Page](https://github.com/hiimsharon/icu-ventilator-adjustment/releases).
+> * **Authorized Archives:** For authorized personnel or academic replication, processed sample archives are securely maintained under institutional guidelines. You can check the authorized release assets via the [Project Releases Page](https://github.com/hiimsharon/icu-ventilator-adjustment/releases), and view detailed guidelines in [DATA.md](DATA.md).
 
 <br>
 
