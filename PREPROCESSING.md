@@ -12,7 +12,7 @@
 
 <p align="center">
   <sub>
-    <strong>版權宣告：</strong> 本圖表與內容受著作權保護，<strong>不得任意轉載或使用</strong>。若需引用或參考，請務必明確標註作者為 <strong>Sha Huang</strong>。
+    <strong>版權宣告：</strong> 本圖表與內容受著作權保護，<strong>不得任意轉載或使用</strong>。若需引用或參考，請務必明確標註作者。
   </sub>
 </p>
 
