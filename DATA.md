@@ -1,12 +1,13 @@
 # Dataset Documentation and Access
 
-This page provides technical documentation, data distribution profiles, and access guidelines for the multivariate time-series dataset used in the ICU mechanical ventilator adjustment research.
+This page provides technical documentation, data distribution profiles, and strict access guidelines for the multivariate time-series dataset used in the ICU mechanical ventilator adjustment research.
 
 ## IRB Approval & Compliance Statement
-本研究已通過高雄醫學大學附設中和紀念醫院人體研究倫理審查委員會審查（編號：KMUHIRB-E(I)-20240420）。
+This study was approved by the Institutional Review Board of Kaohsiung Medical University Chung-Ho Memorial Hospital (Approval No.: KMUHIRB-E(I)-20240420).
 
-* **Patient Confidentiality:** Clinical source data, patient-level medical records, and restricted institutional materials contain sensitive health information and are strictly protected.
-* **Usage Restrictions:** Public access to this repository does not grant permission to reproduce, distribute, or use the raw clinical data. Unauthorized use, redistribution, or commercial exploitation is strictly prohibited.
+* **Patient Confidentiality & Data Protection:** Clinical source data, patient-level medical records, and restricted institutional materials contain sensitive medical information and are strictly protected under medical ethics and data privacy regulations.
+* **Strict Research-Use Only & No Open-Source Redistribution:** This dataset is created and curated exclusively for academic research purposes. **It is NOT open-source or intended for general public use.** 
+* **Prior Notification and Authorization Required:** Public access to this repository or release assets does **not** grant any license to reproduce, distribute, modify, or use the data. Any academic inquiry, collaboration request, or authorized data utilization **must be formally communicated and approved in advance**. Unauthorized use, redistribution, or commercial exploitation is strictly prohibited.
 
 ---
 
@@ -25,12 +26,20 @@ The research dataset comprises clinical records from **355 patients** receiving 
 
 ---
 
-## Authorized Dataset Archives
+## Authorized Dataset Archives & Notice
 
-For authorized personnel or academic replication under institutional guidelines, processed sample archives can be accessed securely via the project release assets:
+Processed sample archives are maintained under strict institutional guidelines. Authorized personnel or researchers seeking verification must adhere to the following conditions:
 
 * **[View Project Releases Page](https://github.com/hiimsharon/icu-ventilator-adjustment/releases)**
 
+> **Important Notice on Use:** 
+> If you reference, utilize, or require access to these research materials, you are **required to notify and obtain permission** from the author or responsible researcher. 
+> 
+> For inquiries regarding data access authorization, academic collaboration, or institutional compliance, please refer to the thesis contact information or official guidelines.
+
+---
+<div align="center">
 <sub>
-For questions regarding data access, authorization, or institutional compliance, please refer to the thesis contact information or official guidelines.
+Copyright © 2026 Sha Huang. All Rights Reserved. Exclusive for academic research validation.
 </sub>
+</div>
