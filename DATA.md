@@ -3,7 +3,7 @@
 This page provides technical documentation, data distribution profiles, and access guidelines for the multivariate time-series dataset used in the ICU mechanical ventilator adjustment research.
 
 ## IRB Approval & Compliance Statement
-The collection and utilization of this clinical dataset have been formally reviewed and approved by the Institutional Review Board (IRB). 
+本研究已通過高雄醫學大學附設中和紀念醫院人體研究倫理審查委員會審查（編號：KMUHIRB-E(I)-20240420）。
 
 * **Patient Confidentiality:** Clinical source data, patient-level medical records, and restricted institutional materials contain sensitive health information and are strictly protected.
 * **Usage Restrictions:** Public access to this repository does not grant permission to reproduce, distribute, or use the raw clinical data. Unauthorized use, redistribution, or commercial exploitation is strictly prohibited.
