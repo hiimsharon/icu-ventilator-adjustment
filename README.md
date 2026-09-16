@@ -4,67 +4,91 @@
 
 ### A Three-Phase Clinical Decision Framework Based on Multivariate Time-Series Analysis
 
-<p align="center">
-  <a href="#-research-specifications--scope"><img src="https://img.shields.io/badge/Status-Active_Research-blue?style=flat-square" alt="Status"></a>
-  <a href="https://hdl.handle.net/11296/7442av"><img src="https://img.shields.io/badge/Thesis-KMU_2026-teal?style=flat-square" alt="Thesis"></a>
-  <a href="DATA.md"><img src="https://img.shields.io/badge/IRB-Approved-critical?style=flat-square" alt="IRB"></a>
-</p>
+<br>
 
-This project implements a multi-phase clinical decision framework designed to model and predict mechanical ventilator adjustment workflows in intensive care units using multivariate time-series data.
+This project implements a multi-phase clinical decision framework
+designed to model and predict mechanical ventilator adjustment workflows
+in intensive care units using multivariate time-series data.
 
 <br>
 
-[Core Architecture](#-core-architecture) ·
-[Specifications](#-research-specifications--scope) ·
-[Methodology](#-methodology) ·
-[Phase Repositories](#-phase-repositories) ·
-[Thesis & Reference](#-master-thesis)
+[Research Scope](#research-scope) ·
+[Research Highlights](#research-highlights) ·
+[Research Framework](#research-framework) ·
+[Methodology](#methodology) ·
+[Phase Repositories](#phase-repositories) ·
+[Master Thesis](#master-thesis) ·
+[Citation & References](#citation--references)
 
 </div>
 
 ---
 
-## Research Specifications & Scope
+## Research Scope
 
-> **[ 點擊下方按鈕看看研究規格與範疇 ]**
-> 詳細的臨床領域、序列模型與最佳化參數設定已收納於下方互動模組中。請點擊以檢視完整規格：
-
-<details>
-<summary><b> 展開：查看詳細研究範疇與系統規格 (Research Scope & Specifications)</b></summary>
-<br>
-
-> 本研究涵蓋高度複雜之加護病房臨床情境，非標準簡易資料處理專案：
->
-> * **Clinical Domain:** Intensive Care Unit (ICU) — High-acuity physiological monitoring streams.
-> * **Research Topic:** Mechanical Ventilator Parameter Adjustment & Sequential Decision Modeling.
-> * **Data Architecture:** Multivariate Ventilator Time-Series (High-frequency telemetry & setting arrays).
-> * **Core Sequence Models:** Long Short-Term Memory (LSTM) and Gated Recurrent Unit (GRU) architectures.
-> * **Hyperparameter Optimization:** Bayesian Optimization via Tree-structured Parzen Estimator (TPE) for stability and generalization.
-> * **Research Output:** A rigorous Three-Stage Clinical Decision Framework for intelligent ventilation control.
-
-</details>
+<table>
+  <tr>
+    <td width="28%"><strong>Clinical Domain</strong></td>
+    <td>Intensive Care Unit (ICU)</td>
+  </tr>
+  <tr>
+    <td><strong>Research Topic</strong></td>
+    <td>Mechanical Ventilator Parameter Adjustment</td>
+  </tr>
+  <tr>
+    <td><strong>Data Structure</strong></td>
+    <td>Multivariate Ventilator Time-Series</td>
+  </tr>
+  <tr>
+    <td><strong>Sequence Models</strong></td>
+    <td>Long Short-Term Memory (LSTM) and Gated Recurrent Unit (GRU)</td>
+  </tr>
+  <tr>
+    <td><strong>Model Optimization</strong></td>
+    <td>Bayesian Hyperparameter Optimization via Tree-structured Parzen Estimator (TPE)</td>
+  </tr>
+  <tr>
+    <td><strong>Research Output</strong></td>
+    <td>Three-Stage Clinical Decision Framework</td>
+  </tr>
+</table>
 
 ---
 
 ## Research Highlights
 
-<details>
-<summary><b> 展開：核心技術亮點 (Click to Expand Highlights)</b></summary>
-<br>
-
-* **Clinical Workflow Modeling:** Learns and predicts the sequential decision logic utilized by clinicians during mechanical ventilation management.
-* **Multivariate Temporal Analysis:** Captures complex dynamic interactions among ventilator settings, patient physiological responses, and adjustment milestones.
-* **Rigorous Optimization:** Employs Bayesian optimization frameworks to systematically search and stabilize network hyperparameter configurations.
-
-</details>
+<table>
+  <tr>
+    <td width="33%" valign="top">
+      <h3>Clinical Workflow Modeling</h3>
+      Learns and predicts the sequential decision logic utilized by
+      clinicians during mechanical ventilation management.
+    </td>
+    <td width="33%" valign="top">
+      <h3>Multivariate Temporal Analysis</h3>
+      Captures complex dynamic interactions among ventilator settings,
+      patient physiological responses, and adjustment milestones.
+    </td>
+    <td width="33%" valign="top">
+      <h3>Rigorous Optimization</h3>
+      Employs Bayesian optimization frameworks to systematically search
+      and stabilize network hyperparameter configurations.
+    </td>
+  </tr>
+</table>
 
 ---
 
 ## Research Framework
 
-The research architecture integrates data preprocessing, phase-specific sample formulation, sequence modeling, and decision evaluation into a cohesive pipeline. 
+The research architecture integrates data preprocessing, phase-specific
+sample formulation, sequence modeling, and decision evaluation into a
+cohesive pipeline. 
 
-Continuous ICU monitoring streams are structured into temporal intervals to predict three progressive clinical objectives: determining adjustment necessity, forecasting adjustment direction, and recommending precise parameter values.
+Continuous ICU monitoring streams are structured into temporal intervals
+to predict three progressive clinical objectives: determining adjustment
+necessity, forecasting adjustment direction, and recommending precise
+parameter values.
 
 <p align="center">
   <a href="assets/figures/framework/research-framework.jpg">
@@ -85,29 +109,74 @@ Continuous ICU monitoring streams are structured into temporal intervals to pred
 
 ---
 
-## Methodology & Data Governance
+## Methodology
 
-### Cohort & Data Profile Summary
-The retrospective dataset comprises high-frequency telemetry and setting records from **355 patients** undergoing invasive mechanical ventilation, totaling **11,298,127 minutes** of multivariate time-series observations.
+### Data Preparation & Cohort Statistics
 
-<details>
-<summary><b> 展開：檢視資料集統計分佈與完整數據指標 (Dataset Profile & Metrics)</b></summary>
+The retrospective dataset comprises high-frequency telemetry and setting
+records from **355 patients** undergoing invasive mechanical ventilation,
+totaling **11,298,127 minutes** of multivariate time-series observations.
+
+<table>
+  <tr>
+    <td width="33%" valign="top">
+      <h3>Data Processing</h3>
+      Filters signal anomalies, handles missing intervals, aligns
+      temporal timestamps, and encodes ventilator modes.
+    </td>
+    <td width="33%" valign="top">
+      <h3>Sample Formulation</h3>
+      Defines event boundaries, isolates transition states, and constructs
+      independent training windows tailored to each phase.
+    </td>
+    <td width="33%" valign="top">
+      <h3>Sequence Generation</h3>
+      Constructs sliding-window tensors mapped to task-specific
+      classification labels and regression targets.
+    </td>
+  </tr>
+</table>
+
+#### Dataset Profile and Quality Metrics
+
+<table>
+  <tr>
+    <td width="30%"><strong>Category</strong></td>
+    <td width="40%"><strong>Metric Description</strong></td>
+    <td><strong>Quantitative Value</strong></td>
+  </tr>
+  <tr>
+    <td rowspan="2"><strong>Cohort Scale</strong></td>
+    <td>Total Patient Cohort</td>
+    <td>355 patients</td>
+  </tr>
+  <tr>
+    <td>Raw Time-Series Observations</td>
+    <td>11,298,127 records</td>
+  </tr>
+  <tr>
+    <td rowspan="2"><strong>Data Integrity</strong></td>
+    <td>Available Data Ratio</td>
+    <td>80.89%</td>
+  </tr>
+  <tr>
+    <td>Unavailable / Masked Interval Ratio</td>
+    <td>19.11%</td>
+  </tr>
+  <tr>
+    <td rowspan="2"><strong>Event Distribution</strong></td>
+    <td>Adjustment Interval Ratio</td>
+    <td>0.81%</td>
+  </tr>
+  <tr>
+    <td>Non-Adjustment Interval Ratio</td>
+    <td>99.19%</td>
+  </tr>
+</table>
+
 <br>
 
-* **Total Patient Cohort:** 355 patients
-* **Raw Time-Series Observations:** 11,298,127 records
-* **Available Data Ratio:** 80.89%
-* **Unavailable / Masked Interval Ratio:** 19.11%
-* **Adjustment Interval Ratio:** 0.81%
-* **Non-Adjustment Interval Ratio:** 99.19%
-
-</details>
-
-<br>
-
-<details>
-<summary><b> 展開：IRB 審查與嚴格資料治理聲明 (IRB & Governance Notice)</b></summary>
-<br>
+#### IRB Approval & Data Governance Statement
 
 > **Institutional Review Board (IRB) Notice:**
 > This study was approved by the Institutional Review Board of Kaohsiung Medical University Chung-Ho Memorial Hospital (Approval No.: KMUHIRB-E(I)-20240420).
@@ -117,7 +186,41 @@ The retrospective dataset comprises high-frequency telemetry and setting records
 > * **Access & Inquiry Protocol:** Public access to this repository does not grant reproduction, modification, or distribution rights. Any academic utilization, replication inquiry, or data access request **must be communicated to and approved by the author in advance**.
 > * **Authorized Archives:** Processed, non-identifiable sample archives are securely hosted via the [Project Releases Page](https://github.com/hiimsharon/icu-ventilator-adjustment/releases). Comprehensive guidelines are documented in [DATA.md](DATA.md).
 
-</details>
+<br>
+
+### Model Development
+
+<table>
+  <tr>
+    <td width="33%" valign="top">
+      <h3>Sequence Modeling</h3>
+      Implements deep recurrent networks (LSTM and GRU) optimized
+      for clinical multivariate forecasting.
+    </td>
+    <td width="33%" valign="top">
+      <h3>Hyperparameter Tuning</h3>
+      Applies TPE-based Bayesian optimization to balance convergence
+      speed and generalization error.
+    </td>
+    <td width="33%" valign="top">
+      <h3>Model Selection</h3>
+      Evaluates candidate checkpoints across independent cross-validation
+      folds using task-specific objective metrics.
+    </td>
+  </tr>
+</table>
+
+<br>
+
+### Model Evaluation
+
+Classification performance is assessed via accuracy, precision, recall,
+F1-score, and area under the ROC curve (AUROC). Regression performance
+for parameter recommendation is evaluated using agreement and error
+metrics suited to physiological target distributions.
+
+Evaluation protocols are independently structured for each phase to
+maintain alignment with specific clinical decision milestones.
 
 ---
 
@@ -163,35 +266,72 @@ The retrospective dataset comprises high-frequency telemetry and setting records
 
 ---
 
-## Master Thesis & Reference
+## Master Thesis
 
 **應用深度學習方法於加護病房呼吸器調參之研究**
 
 Applying Deep Learning Techniques for Mechanical Ventilator Parameter Adjustment in the ICU
 
-**Author:** 黃筱雯（2026）  
-**Institution:** Kaohsiung Medical University
+**Author:** 黃筱雯（2026）
+
+Kaohsiung Medical University
 
 **[View Official Thesis Record →](https://hdl.handle.net/11296/7442av)**
 
-<details>
-<summary><b>📖 點此展開：學術引用格式與授權聲明 (Academic Citation & Terms)</b></summary>
-<br>
+---
+
+## Citation & References
+
+### Academic Citation
 
 If you reference this research framework or related materials, please cite the master's thesis:
+
 > 黃筱雯（2026）。《應用深度學習方法於加護病房呼吸器調參之研究》。高雄醫學大學碩士論文。https://hdl.handle.net/11296/7442av
 
-* Detailed governance policies: [Terms of Use](TERMS_OF_USE.md) | [Copyright Notice](COPYRIGHT.md) | [Research Notice](NOTICE.md)
+<br>
 
-</details>
+### Reference Access
+
+Complete bibliographic references are cataloged within the formal thesis document.
+
+**[Access Thesis and References →](https://hdl.handle.net/11296/7442av)**
+
+<br>
+
+### Embargoed Access Notice
+
+If full-text access is restricted during the institutional embargo period,
+please consult the library guidelines provided by Kaohsiung Medical University.
+
+**[University Library Guidelines →](https://olis.kmu.edu.tw/index.php/zh-TW/lib-faq/10-)**
+
+---
+
+## Research Portfolio Notice
+
+Clinical data pipelines and model assets are proprietary to the primary
+researcher. Public visibility does not constitute an open-source or permissive
+license grant.
+
+Academic discussions or citations must explicitly attribute **Sha Huang**,
+the study title, the publication year (**2026**), and reference the core
+repository link. 
+
+Detailed governance policies are available in:
+
+- [Terms of Use](TERMS_OF_USE.md)
+- [Copyright Notice](COPYRIGHT.md)
+- [Research and Use Notice](NOTICE.md)
 
 ---
 
 <div align="center">
+
 <sub>
 
-Copyright © 2026 Sha Huang. All Rights Reserved.  
+Copyright © 2026 Sha Huang. All Rights Reserved. 
 Restricted to authorized academic research validation.
 
 </sub>
+
 </div>
